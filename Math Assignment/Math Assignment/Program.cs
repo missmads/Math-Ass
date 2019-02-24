@@ -14,22 +14,25 @@ namespace Math_Assignment
             Console.ReadLine();
 
             Console.WriteLine("Give me a number!");
-            string firstNumberLetter = Console.ReadLine();
-            int firstNumber = int.Parse(firstNumberLetter);
+            Console.WriteLine("It has to be a whole number, and may therefore not contain deciman numbers");
+            Console.WriteLine("If you would like, you can try to go with a decimal number, but it might not work though");
+            string firstNumberTotallyNotADecimalNumberLetter = Console.ReadLine();
+            int firstNumberOutOfManyNumbersToComeInTheNearestFuture = int.Parse(firstNumberTotallyNotADecimalNumberLetter);
      
-            Console.WriteLine("Good. Now give me another, or same, number!");
-            string secondNumberLetter = Console.ReadLine();
-            int secondNumber = int.Parse(secondNumberLetter);
+            Console.WriteLine("Good. That Worked Perfektly. Now give me another, or same, number!");
+            Console.WriteLine("But seriously! Dont do the F*cking Decimal numbers!");
+            string secondNumberTotallyNotADecimalNumberLetter = Console.ReadLine();
+            int secondNumberOutOfManyNumbersToComeInTheNearestFuture = int.Parse(secondNumberTotallyNotADecimalNumberLetter);
 
-            if (firstNumber == secondNumber)
+            if (firstNumberOutOfManyNumbersToComeInTheNearestFuture == secondNumberOutOfManyNumbersToComeInTheNearestFuture)
             {
-                int newNumber = firstNumber + secondNumber;
-                int finalNumber = newNumber + newNumber + newNumber;
-                Console.WriteLine(finalNumber);
+                int newNumberOutOfManyNumbersToComeInTheNearestFuture = firstNumberOutOfManyNumbersToComeInTheNearestFuture + secondNumberOutOfManyNumbersToComeInTheNearestFuture;
+                int finalNumberOutOfManyNumbersToComeInTheNearestFuture = newNumberOutOfManyNumbersToComeInTheNearestFuture + newNumberOutOfManyNumbersToComeInTheNearestFuture + newNumberOutOfManyNumbersToComeInTheNearestFuture;
+                Console.WriteLine(finalNumberOutOfManyNumbersToComeInTheNearestFuture);
             }
             else
             {
-                Console.WriteLine(firstNumber + secondNumber);
+                Console.WriteLine(firstNumberOutOfManyNumbersToComeInTheNearestFuture + secondNumberOutOfManyNumbersToComeInTheNearestFuture);
             }
 
             Console.ReadLine();
